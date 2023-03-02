@@ -36,8 +36,8 @@ export default function Home() {
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>About Me</h1>
           <div className='h-[1px] w-full bg-white'></div>
         </div>
-        <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes — I didn't know at the time that I was learning to manipulate HTML and CSS, all I knew was that I loved doing it!</p>
-        <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor's Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
+        <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes — I didn&apos;t know at the time that I was learning to manipulate HTML and CSS, all I knew was that I loved doing it!</p>
+        <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor&apos;s Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
         <p className='text-blue-light text-lg my-4'>If I&apos;m not at the beach enjoying the California surf or trying out new resturaunts and cafes with friends, I&apos;m usually on my computer working on various projects or simply just learning about new frontend frameworks.</p>
         <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I&apos;ve been working with recently:</p>
         <ul className='text-white grid grid-cols-2 mx-4 my-4'>
@@ -165,7 +165,7 @@ export default function Home() {
           <p>Like what you see?</p>
         </div>
         <h1 className='text-4xl text-white my-4'>Contact Me</h1>
-        <p className='text-center text-blue-light'>I’m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <p className='text-center text-blue-light'>I&apos;m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
         <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-10' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
       </section>
 
