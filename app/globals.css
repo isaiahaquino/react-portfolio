@@ -8,6 +8,20 @@
   margin: 0;
 }
 
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #293241;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3d5a80;
+  border-radius: 14px;
+  border: 4px solid #293241
+}
+
 html,
 body {
   max-width: 100vw;
