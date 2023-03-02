@@ -38,7 +38,7 @@ export default function Home() {
         <ul className='text-white grid grid-cols-2 mx-4 my-4'>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            Javascript (ES6+)
+            Javascript
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
@@ -46,19 +46,19 @@ export default function Home() {
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            ReactJS
+            React
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            NextJS
+            Next.JS
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            GatsbyJS
+            Gatsby
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            Planetscale
+            TailwindCSS
           </li>
         </ul>
       </section>
@@ -74,9 +74,9 @@ export default function Home() {
           <div className='px-10 py-10'>
             <p className='text-orange'>Featured Project</p>
             <h1 className='text-white text-xl'>Alpha Psi Rho</h1>
-            <p className='text-blue-light my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
-            <ul className='text-blue-light flex gap-3'>
-              <li>GatsbyJS</li>
+            <p className='text-blue-light my-4'>Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
+            <ul className='text-blue-light flex text-sm gap-3'>
+              <li>Gatsby</li>
               <li>Contentful</li>
             </ul>
             <ul className='my-4 flex gap-3'>
@@ -98,11 +98,12 @@ export default function Home() {
             <p className='text-orange'>Featured Project</p>
             <h1 className='text-white text-xl'>E-commerce Website</h1>
             <p className='text-blue-light my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
-            <ul className='text-blue-light flex gap-3'>
-              <li>NextJS</li>
+            <ul className='text-blue-light text-sm flex gap-x-2 flex-wrap'>
+              <li>Next.JS</li>
               <li>TailwindCSS</li>
               <li>Planetscale</li>
               <li>Prisma</li>
+              <li>Vercel</li>
             </ul>
             <ul className='my-4 flex gap-3'>
               <li>
@@ -123,7 +124,7 @@ export default function Home() {
             <p className='text-orange'>Featured Project</p>
             <h1 className='text-white text-xl'>Worlde Clone</h1>
             <p className='text-blue-light my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
-            <ul className='text-blue-light flex gap-3'>
+            <ul className='text-blue-light flex gap-x-2 text-sm'>
               <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
