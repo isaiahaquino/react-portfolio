@@ -34,7 +34,7 @@ export default function Home() {
           <div className='h-[1px] w-full bg-white'></div>
         </div>
         <p className='text-blue-light text-lg my-4'>EDIT:Hello! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-        <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I've been working with recently:</p>
+        <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I&apos;ve been working with recently:</p>
         <ul className='text-white grid grid-cols-2 mx-4 my-4'>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
@@ -66,7 +66,7 @@ export default function Home() {
       <section className='mt-[10rem] ml-[3rem] mr-[4rem]'>
         <div className='flex items-center my-10'>
           <TbArrowBigRightLines color='#ee6c4d' size={35}/>
-          <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>Things I've Built</h1>
+          <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>Things I&apos;ve Built</h1>
           <div className='h-[1px] w-full bg-white'></div>
         </div>
 
