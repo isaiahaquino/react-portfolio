@@ -20,7 +20,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className='mt-[10rem] ml-[3rem] mr-[5rem]'>
+        <div className='mt-[10rem] ml-[2.5rem] mr-[3rem]'>
           <h2 className='my-5 text-lg text-orange'>Hey there, my name is</h2>
           <h1 className='text-4xl my-1 text-white'>Isaiah Aquino.</h1>
           <h1 className='text-4xl my-1 text-blue-light'>I build things for the web.</h1>
@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* ABOUT ME SECTION */}
 
-      <section className='mt-[20rem] ml-[3rem] mr-[4rem]'>
+      <section className='mt-[20rem] mx-[2.5rem]'>
         <div className='flex items-center my-10'>
           <TbArrowBigRightLines color='#ee6c4d' size={30}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>About Me</h1>
@@ -70,9 +70,9 @@ export default function Home() {
 
       {/* FEATURED PROJECTS SECTION */}
 
-      <section className='mt-[10rem] ml-[3rem] mr-[4rem]'>
+      <section className='mt-[10rem] mx-[2.5rem]'>
         <div className='flex items-center my-10'>
-          <TbArrowBigRightLines color='#ee6c4d' size={55}/>
+          <TbArrowBigRightLines color='#ee6c4d' size={70}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>Things I&apos;ve Built</h1>
           <div className='h-[1px] w-full bg-white'></div>
         </div>
@@ -159,7 +159,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
 
-      <section className='mt-[10rem] ml-[3rem] mr-[4rem] flex flex-col items-center'>
+      <section className='mt-[10rem] mx-[2.5rem] flex flex-col items-center'>
         <div className='flex items-center text-orange gap-2'>
           <TbArrowBigRightLines color='#ee6c4d' size={15}/>
           <p>Like what you see?</p>
