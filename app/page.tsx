@@ -45,11 +45,11 @@ export default function Home() {
         <ul className='text-white grid grid-cols-2 mx-4 my-4 max-w-[20rem]'>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            Javascript
+            JavaScript
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            Typescript
+            TypeScript
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
@@ -115,10 +115,10 @@ export default function Home() {
             <ul className='text-blue-light text-sm flex gap-x-2 flex-wrap lg:justify-end'>
               <li>React</li>
               <li>Next.JS</li>
+              <li>TypeScript</li>
               <li>TailwindCSS</li>
               <li>Planetscale</li>
               <li>Prisma</li>
-              <li>Vercel</li>
             </ul>
             <ul className='my-4 flex gap-3 lg:justify-end'>
               <li>
@@ -170,7 +170,7 @@ export default function Home() {
           <p>Like what you see?</p>
         </div>
         <h1 className='text-4xl text-white my-4'>Contact Me</h1>
-        <p className='text-center text-blue-light max-w-xl'>I&apos;m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <p className='text-center text-blue-light max-w-xl'>I&apos;m currently looking for new opportunities as a Front-end Developer, Software Engineer, or Full-stack Developer. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
         <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-5 transition-all duration-200 ease-in-out' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
       </section>
 
