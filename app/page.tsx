@@ -14,17 +14,17 @@ export default function Home() {
           <h1 className='text-2xl font-semibold text-orange'>ISAIAH AQUINO</h1>
           <ul className='flex items-center gap-4'>
             <li>
-              <a href='https://docs.google.com/document/d/1oS3eGb4siIOyTOP9uHplK8lYOmD9bvKImNpqUeJ3Zf4/edit?usp=sharing' className='border-2 border-orange px-2 py-2 rounded-xl text-orange hover:bg-orange hover:bg-opacity-10'>
+              <a href='https://docs.google.com/document/d/1oS3eGb4siIOyTOP9uHplK8lYOmD9bvKImNpqUeJ3Zf4/edit?usp=sharing' className='border-2 border-orange px-2 py-2 rounded-md text-orange hover:bg-orange hover:bg-opacity-5 transition-all duration-200 ease-in-out'>
                 RESUME
               </a>
             </li>
           </ul>
         </nav>
         <div className='mt-[10rem] ml-[2.5rem] mr-[3rem]'>
-          <h2 className='my-5 text-lg text-orange'>Hey there, my name is</h2>
-          <h1 className='text-4xl my-1 text-white'>Isaiah Aquino.</h1>
-          <h1 className='text-4xl my-1 text-blue-light'>I build things for the web.</h1>
-          <p className='my-5 text-lg text-blue-light'>I am aspiring Front-end Javascript developer with a hunger for expanding my knowledge and experience in creating clean and user friendly web experiences.</p>
+          <h2 className='my-2 text-lg text-orange'>Hey there, my name is</h2>
+          <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-white'>Isaiah Aquino.</h1>
+          <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-blue-light'>I build things for the web.</h1>
+          <p className='my-5 text-lg text-blue-light max-w-lg'>I am aspiring Front-end Javascript developer with a hunger for expanding my knowledge and experience in creating clean and user friendly web experiences.</p>
         </div>
       </section>
 
@@ -32,9 +32,9 @@ export default function Home() {
 
       <section className='mt-[20rem] mx-[2.5rem]'>
         <div className='flex items-center my-10'>
-          <TbArrowBigRightLines color='#ee6c4d' size={30}/>
+          <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>About Me</h1>
-          <div className='h-[1px] w-full bg-white'></div>
+          <div className='h-[1px] w-full max-w-md bg-white'></div>
         </div>
         <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes — I didn&apos;t know at the time that I was learning to manipulate HTML and CSS, all I knew was that I loved doing it!</p>
         <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor&apos;s Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
@@ -70,16 +70,18 @@ export default function Home() {
 
       {/* FEATURED PROJECTS SECTION */}
 
-      <section className='mt-[10rem] mx-[2.5rem]'>
+      <section className='mt-[10rem] mx-[2.5rem] flex flex-col'>
         <div className='flex items-center my-10'>
-          <TbArrowBigRightLines color='#ee6c4d' size={70}/>
+          <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>Things I&apos;ve Built</h1>
-          <div className='h-[1px] w-full bg-white'></div>
+          <div className='h-[1px] w-full max-w-md bg-white'></div>
         </div>
 
         <div className='w-full rounded my-10 drop-shadow-lg relative'>
-          <Image src='/alphapsirho.jpeg' alt='alphapsirho screenshot' fill className='object-cover rounded'/>
-          <div className='px-10 py-10 z-10 bg-black relative opacity-90'>
+          <div className='md:w-[30rem] md:h-full relative md:right-0 md:absolute'>
+            <Image src='/alphapsirho.jpeg' alt='alphapsirho screenshot' fill className='object-cover rounded relative'/>
+          </div>
+          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-0 relative md:w-[30rem] opacity-90'>
             <p className='text-orange'>Featured Project</p>
             <h1 className='text-white text-xl'>Alpha Psi Rho</h1>
             <p className='text-blue-light my-4'>Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
@@ -165,8 +167,8 @@ export default function Home() {
           <p>Like what you see?</p>
         </div>
         <h1 className='text-4xl text-white my-4'>Contact Me</h1>
-        <p className='text-center text-blue-light'>I&apos;m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-        <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-10' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
+        <p className='text-center text-blue-light max-w-lg'>I&apos;m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-5 transition-all duration-200 ease-in-out' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
       </section>
 
       {/* FOOTER SECTION */}
