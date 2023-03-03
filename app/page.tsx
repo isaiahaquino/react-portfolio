@@ -20,7 +20,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className='mt-[10rem] ml-[2.5rem] mr-[3rem]'>
+        <div className='mt-[10rem] ml-[2.5rem] mr-[3rem] max-w-[1024px] lg:mx-auto'>
           <h2 className='my-2 text-lg text-orange'>Hey there, my name is</h2>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-white'>Isaiah Aquino.</h1>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-blue-light'>I build things for the web.</h1>
@@ -30,15 +30,15 @@ export default function Home() {
 
       {/* ABOUT ME SECTION */}
 
-      <section className='mt-[20rem] mx-[2.5rem]'>
+      <section className='mt-[20rem] mx-[2.5rem] max-w-[1024px] lg:mx-auto'>
         <div className='flex items-center my-10'>
           <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>About Me</h1>
           <div className='h-[1px] w-full max-w-md bg-white'></div>
         </div>
-        <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes — I didn&apos;t know at the time that I was learning to manipulate HTML and CSS, all I knew was that I loved doing it!</p>
+        <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes. I didn&apos;t know at the time that I was learning to manipulate HTML and CSS. All I knew was that I loved doing it!</p>
         <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor&apos;s Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
-        <p className='text-blue-light text-lg my-4'>If I&apos;m not at the beach enjoying the California surf or trying out new resturaunts and cafes with friends, I&apos;m usually on my computer working on various projects or simply just learning about new frontend frameworks.</p>
+        <p className='text-blue-light text-lg my-4'>If I&apos;m not at the beach enjoying the California surf or trying out new resturaunts and cafes with friends, I&apos;m usually on my computer working on various projects or learning about new frontend frameworks.</p>
         <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I&apos;ve been working with recently:</p>
         <ul className='text-white grid grid-cols-2 mx-4 my-4'>
           <li className='flex items-center gap-2'>
@@ -70,21 +70,20 @@ export default function Home() {
 
       {/* FEATURED PROJECTS SECTION */}
 
-      <section className='mt-[10rem] mx-[2.5rem] flex flex-col'>
+      <section className='mt-[10rem] mx-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
         <div className='flex items-center my-10'>
           <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>Things I&apos;ve Built</h1>
           <div className='h-[1px] w-full max-w-md bg-white'></div>
         </div>
 
-        <div className='w-full rounded my-10 drop-shadow-lg relative'>
-          <div className='md:w-[30rem] md:h-full relative md:right-0 md:absolute'>
-            <Image src='/alphapsirho.jpeg' alt='alphapsirho screenshot' fill className='object-cover rounded relative'/>
+        <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
+          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
+            <Image src='/alphapsirho.jpeg' alt='alphapsirho screenshot' fill className='object-cover rounded'/>
           </div>
-          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-0 relative md:w-[30rem] opacity-90'>
-            <p className='text-orange'>Featured Project</p>
-            <h1 className='text-white text-xl'>Alpha Psi Rho</h1>
-            <p className='text-blue-light my-4'>Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
+          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
+            <h1 className='text-orange text-xl md:text-2xl'>Alpha Psi Rho</h1>
+            <p className='text-white my-4'>Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
             <ul className='text-blue-light flex text-sm gap-3'>
               <li>React</li>
               <li>Gatsby</li>
@@ -104,12 +103,13 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className='w-full rounded my-10 drop-shadow-lg relative'>
-          <Image src='/fakesurf.jpeg' alt='fakesurf screenshot' fill className='object-cover rounded'/>
-          <div className='px-10 py-10 z-10 bg-black relative opacity-90'>
-            <p className='text-orange'>Featured Project</p>
-            <h1 className='text-white text-xl'>E-commerce Website</h1>
-            <p className='text-blue-light my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
+        <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
+          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
+            <Image src='/fakesurf.jpeg' alt='fakesurf screenshot' fill className='object-cover rounded'/>
+          </div>
+          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
+            <h1 className='text-orange text-xl md:text-2xl'>E-commerce Website</h1>
+            <p className='text-white my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
             <ul className='text-blue-light text-sm flex gap-x-2 flex-wrap'>
               <li>React</li>
               <li>Next.JS</li>
@@ -132,12 +132,13 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className='w-full rounded my-10 drop-shadow-lg relative'>
-          <Image src='/wordle.jpeg' alt='wordle screenshot' fill className='object-cover rounded'/>
-          <div className='px-10 py-10 z-10 bg-black relative opacity-90'>
-            <p className='text-orange'>Featured Project</p>
-            <h1 className='text-white text-xl'>Wordle Clone</h1>
-            <p className='text-blue-light my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
+        <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
+          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
+            <Image src='/wordle.jpeg' alt='wordle screenshot' fill className='object-cover rounded'/>
+          </div>
+          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
+            <h1 className='text-orange text-xl md:text-2xl'>Wordle Clone</h1>
+            <p className='text-white my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
             <ul className='text-blue-light flex gap-x-2 text-sm'>
               <li>HTML</li>
               <li>CSS</li>
@@ -167,7 +168,7 @@ export default function Home() {
           <p>Like what you see?</p>
         </div>
         <h1 className='text-4xl text-white my-4'>Contact Me</h1>
-        <p className='text-center text-blue-light max-w-lg'>I&apos;m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+        <p className='text-center text-blue-light max-w-xl'>I&apos;m currently looking for new opportunities as a Front-end Developer, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
         <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-5 transition-all duration-200 ease-in-out' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
       </section>
 
