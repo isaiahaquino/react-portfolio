@@ -24,7 +24,7 @@ export default function Home() {
           <h2 className='my-2 text-lg text-orange'>Hey there, my name is</h2>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-white'>Isaiah Aquino.</h1>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-blue-light'>I build things for the web.</h1>
-          <p className='my-5 text-lg text-blue-light max-w-lg'>I am aspiring Front-end Javascript developer with a hunger for expanding my knowledge and experience in creating clean and user friendly web experiences.</p>
+          <p className='my-5 text-lg text-blue-light max-w-lg'>I&apos;m an aspiring Front-end Javascript developer with a hunger for expanding my knowledge and experience in creating clean and user friendly web experiences.</p>
         </div>
       </section>
 
