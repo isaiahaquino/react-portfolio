@@ -36,11 +36,13 @@ export default function Home() {
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl'>About Me</h1>
           <div className='h-[1px] w-full max-w-md bg-white'></div>
         </div>
-        <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes. I didn&apos;t know at the time that I was learning to manipulate HTML and CSS. All I knew was that I loved doing it!</p>
-        <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor&apos;s Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
-        <p className='text-blue-light text-lg my-4'>If I&apos;m not at the beach enjoying the California surf or trying out new resturaunts and cafes with friends, I&apos;m usually on my computer working on various projects or learning about new frontend frameworks.</p>
-        <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I&apos;ve been working with recently:</p>
-        <ul className='text-white grid grid-cols-2 mx-4 my-4'>
+        <div className='max-w-[850px]'>
+          <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes. I didn&apos;t know at the time that I was learning to manipulate HTML and CSS. All I knew was that I loved doing it!</p>
+          <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor&apos;s Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
+          <p className='text-blue-light text-lg my-4'>If I&apos;m not at the beach enjoying the California surf or trying out new resturaunts and cafes with friends, I&apos;m usually on my computer working on various projects or learning about new frontend frameworks.</p>
+          <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I&apos;ve been working with recently:</p>
+        </div>
+        <ul className='text-white grid grid-cols-2 mx-4 my-4 max-w-[20rem]'>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
             Javascript
@@ -78,7 +80,7 @@ export default function Home() {
         </div>
 
         <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
-          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
+          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
             <Image src='/alphapsirho.jpeg' alt='alphapsirho screenshot' fill className='object-cover rounded'/>
           </div>
           <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
@@ -104,13 +106,13 @@ export default function Home() {
           </div>
         </div>
         <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
-          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
+          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] lg:left-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
             <Image src='/fakesurf.jpeg' alt='fakesurf screenshot' fill className='object-cover rounded'/>
           </div>
-          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
+          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:absolute lg:right-0 md:w-[30rem] opacity-90 rounded lg:text-right'>
             <h1 className='text-orange text-xl md:text-2xl'>E-commerce Website</h1>
-            <p className='text-white my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
-            <ul className='text-blue-light text-sm flex gap-x-2 flex-wrap'>
+            <p className='text-white my-4'>A Full Stack mock e-commerce website. Enables users to browse various item categories, create custom search queries, and the ability to add/remove items to their shopping cart.</p>
+            <ul className='text-blue-light text-sm flex gap-x-2 flex-wrap lg:justify-end'>
               <li>React</li>
               <li>Next.JS</li>
               <li>TailwindCSS</li>
@@ -118,7 +120,7 @@ export default function Home() {
               <li>Prisma</li>
               <li>Vercel</li>
             </ul>
-            <ul className='my-4 flex gap-3'>
+            <ul className='my-4 flex gap-3 lg:justify-end'>
               <li>
                 <Link href='https://github.com/isaiahaquino/fakesurfv2'  className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
                   <TbBrandGithub size={25} />
@@ -133,12 +135,12 @@ export default function Home() {
           </div>
         </div>
         <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
-          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
+          <div className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
             <Image src='/wordle.jpeg' alt='wordle screenshot' fill className='object-cover rounded'/>
           </div>
-          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
+          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative lg:right-0 md:w-[30rem] opacity-90 rounded'>
             <h1 className='text-orange text-xl md:text-2xl'>Wordle Clone</h1>
-            <p className='text-white my-4'>Designed and developed a modern website using GatsbyJS and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
+            <p className='text-white my-4'>Recreated the web based word game <Link className='text-orange' href='https://www.nytimes.com/games/wordle/index.html'>Worlde</Link>. Integrated similar design and animations to exhibit design-to-code skills.</p>
             <ul className='text-blue-light flex gap-x-2 text-sm'>
               <li>HTML</li>
               <li>CSS</li>
