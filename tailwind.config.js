@@ -18,7 +18,11 @@ module.exports = {
       'red': '#c1121f',
       'red-dark': '#780000'
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'gloock': ['Gloock', 'regular']
+      }
+    },
   },
   plugins: [],
 }
