@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (oldTop > scrollTop) {
+    if (oldTop >= scrollTop) {
       // scrolling up
       setNav('opacity-100 translate-y-4')
     } else {
