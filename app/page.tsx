@@ -51,7 +51,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className='mt-[10rem] ml-[2.5rem] mr-[3rem] max-w-[1024px] lg:mx-auto'>
+        <div className='mt-[10rem] pl-[2.5rem] pr-[3rem] max-w-[1024px] lg:mx-auto'>
           <h2 className='my-2 text-lg text-orange'>Hey there, my name is</h2>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-white font-gloock'>Isaiah Aquino.</h1>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-blue-light font-gloock'>I build things for the web.</h1>
@@ -61,7 +61,7 @@ export default function Home() {
 
       {/* ABOUT ME SECTION */}
 
-      <section className='mt-[20rem] mx-[2.5rem] max-w-[1024px] lg:mx-auto'>
+      <section className='mt-[20rem] px-[2.5rem] max-w-[1024px] lg:mx-auto'>
         <div className='flex items-center my-10 max-w-3xl'>
           <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl font-gloock'>About Me</h1>
@@ -103,7 +103,7 @@ export default function Home() {
 
       {/* FEATURED PROJECTS SECTION */}
 
-      <section className='mt-[10rem] mx-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
+      <section className='mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
         <div className='flex items-center my-10 max-w-3xl'>
           <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl font-gloock'>Things I&apos;ve Built</h1>
@@ -195,7 +195,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
 
-      <section className='mt-[10rem] mx-[2.5rem] flex flex-col items-center'>
+      <section className='mt-[10rem] px-[2.5rem] flex flex-col items-center'>
         <div className='flex items-center text-orange gap-2'>
           <TbArrowBigRightLines color='#ee6c4d' size={15}/>
           <p>Like what you see?</p>
