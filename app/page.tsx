@@ -4,29 +4,44 @@ import { TbArrowBigRightLines, TbChevronsRight, TbBrandGithub, TbBrandLinkedin, 
 import { FiFileText } from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
-import { WheelEvent, useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
 
   const [nav, setNav] = useState('fixed')
+  const [scrollTop, setScrollTop] = useState(0)
+  const [oldTop, setOldTop] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = (event: Event) => {
+      setScrollTop(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
   
-  function handleWheelEvent(event: WheelEvent<HTMLDivElement>) {
-    if (event.deltaY < 0) {
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (oldTop > scrollTop) {
       // scrolling up
       setNav('opacity-100 translate-y-4')
-    } else if (event.deltaY > 0) {
+    } else {
       // scrolling down
       setNav('opacity-0 z-[-1]')
     }
-  }
+    setOldTop(scrollTop)
+  }, [scrollTop])
 
   return (
-    <main className='min-h-screen' onWheel={handleWheelEvent}>
+    <main className='min-h-screen'>
 
       {/* FRONT PAGE */}
 
       <section>
-        <nav className={`fixed top-[-1rem] w-screen bg-black shadow-lg z-50 flex justify-between items-center py-4 px-6 ${nav} transition-all duration-300 ease-in-out`}>
+        <nav className={`fixed top-[-1rem] w-screen bg-black z-50 flex justify-between items-center py-4 px-6 ${nav} ${scrollTop == 0 ? 'shadow-none' : 'shadow-lg'} transition-all duration-300 ease-in-out`}>
           <h1 className='text-2xl font-semibold text-orange font-gloock'>MadeByIsaiah</h1>
           <ul className='flex items-center gap-4'>
             <li>
