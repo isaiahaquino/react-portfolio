@@ -4,29 +4,31 @@ import { TbArrowBigRightLines, TbChevronsRight, TbBrandGithub, TbBrandLinkedin, 
 import { FiFileText } from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
-import { WheelEvent, useState } from 'react'
+import { WheelEvent, useState, UIEvent, useEffect } from 'react'
 
 export default function Home() {
 
   const [nav, setNav] = useState('fixed')
-  
-  function handleWheelEvent(event: WheelEvent<HTMLDivElement>) {
-    if (event.deltaY < 0) {
+  const [screenPos, setScreenPos] = useState(0)
+
+  const handleScroll = (event: React.UIEvent<HTMLElement>) => {
+    if (event.currentTarget.scrollTop < screenPos) {
       // scrolling up
       setNav('opacity-100 translate-y-4')
-    } else if (event.deltaY > 0) {
+    } else {
       // scrolling down
       setNav('opacity-0 z-[-1]')
     }
+    setScreenPos(event.currentTarget.scrollTop)
   }
 
   return (
-    <main className='min-h-screen' onWheel={handleWheelEvent}>
+    <main className='min-h-screen h-screen overflow-y-scroll overflow-x-hidden' onScroll={handleScroll}>
 
       {/* FRONT PAGE */}
 
       <section>
-        <nav className={`fixed top-[-1rem] w-screen bg-black shadow-lg z-50 flex justify-between items-center py-4 px-6 ${nav} transition-all duration-300 ease-in-out`}>
+        <nav className={`fixed top-[-1rem] w-screen bg-black shadow-lg z-20 flex justify-between items-center py-4 px-6 ${nav} ${screenPos == 0 ? 'shadow-none bg-transparent' : ''} transition-all duration-300 ease-in-out`}>
           <h1 className='text-2xl font-semibold text-orange font-gloock'>MadeByIsaiah</h1>
           <ul className='flex items-center gap-4'>
             <li>
@@ -36,7 +38,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className='mt-[10rem] ml-[2.5rem] mr-[3rem] max-w-[1024px] lg:mx-auto'>
+        <div className='mt-[10rem] pl-[2.5rem] pr-[3rem] max-w-[1024px] lg:mx-auto'>
           <h2 className='my-2 text-lg text-orange'>Hey there, my name is</h2>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-white font-gloock'>Isaiah Aquino.</h1>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-blue-light font-gloock'>I build things for the web.</h1>
@@ -46,7 +48,7 @@ export default function Home() {
 
       {/* ABOUT ME SECTION */}
 
-      <section className='mt-[20rem] mx-[2.5rem] max-w-[1024px] lg:mx-auto'>
+      <section className='mt-[20rem] px-[2.5rem] max-w-[1024px] lg:mx-auto'>
         <div className='flex items-center my-10 max-w-3xl'>
           <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl font-gloock'>About Me</h1>
@@ -88,7 +90,7 @@ export default function Home() {
 
       {/* FEATURED PROJECTS SECTION */}
 
-      <section className='mt-[10rem] mx-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
+      <section className='mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
         <div className='flex items-center my-10 max-w-3xl'>
           <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
           <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl font-gloock'>Things I&apos;ve Built</h1>
@@ -180,7 +182,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
 
-      <section className='mt-[10rem] mx-[2.5rem] flex flex-col items-center'>
+      <section className='mt-[10rem] px-[2.5rem] flex flex-col items-center'>
         <div className='flex items-center text-orange gap-2'>
           <TbArrowBigRightLines color='#ee6c4d' size={15}/>
           <p>Like what you see?</p>
