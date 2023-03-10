@@ -5,6 +5,7 @@ import { FiFileText } from 'react-icons/fi'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
+import Project from './components/project'
 
 export default function Home() {
 
@@ -110,87 +111,33 @@ export default function Home() {
           <div className='h-[1px] w-full bg-blue'></div>
         </div>
 
-        <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
-          <Link href='https://alphapsirhosdsu.gatsbyjs.io/'  className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
-            <Image src='/alphapsirho.jpeg' alt='alphapsirho screenshot' fill className='object-cover rounded'/>
-          </Link>
-          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded'>
-            <h1 className='text-orange text-xl md:text-2xl'>Alpha Psi Rho</h1>
-            <p className='text-white my-4'>Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.</p>
-            <ul className='text-blue-light flex text-sm gap-3'>
-              <li>React</li>
-              <li>Gatsby</li>
-              <li>Contentful</li>
-            </ul>
-            <ul className='my-4 flex gap-3'>
-              <li>
-                <Link href='https://github.com/isaiahaquino/sdsu-apsirho'  className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
-                  <TbBrandGithub size={25} />
-                </Link>
-              </li>
-              <li>
-                <Link href='https://alphapsirhosdsu.gatsbyjs.io/'  className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
-                  <TbExternalLink size={25} />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
-          <Link href='https://fakesurf.vercel.app/' className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] lg:left-0 hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
-            <Image src='/fakesurf.jpeg' alt='fakesurf screenshot' fill className='object-cover rounded'/>
-          </Link>
-          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:absolute lg:right-0 md:w-[30rem] opacity-90 rounded lg:text-right'>
-            <h1 className='text-orange text-xl md:text-2xl'>E-commerce Website</h1>
-            <p className='text-white my-4'>A Full Stack mock e-commerce website. Enables users to browse various item categories, create custom search queries, and the ability to add/remove items to their shopping cart.</p>
-            <ul className='text-blue-light text-sm flex gap-x-2 flex-wrap lg:justify-end'>
-              <li>React</li>
-              <li>Next.JS</li>
-              <li>TypeScript</li>
-              <li>TailwindCSS</li>
-              <li>Planetscale</li>
-              <li>Prisma</li>
-            </ul>
-            <ul className='my-4 flex gap-3 lg:justify-end'>
-              <li>
-                <Link href='https://github.com/isaiahaquino/fakesurfv2'  className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
-                  <TbBrandGithub size={25} />
-                </Link>
-              </li>
-              <li>
-                <Link href='https://fakesurf.vercel.app/'  className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
-                  <TbExternalLink size={25} />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className='w-full md:h-[25rem] rounded my-10 drop-shadow-lg relative'>
-          <Link href='https://isaiahaquino.github.io/wordle-clone/' className='h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out'>
-            <Image src='/wordle.jpeg' alt='wordle screenshot' fill className='object-cover rounded'/>
-          </Link>
-          <div className='px-10 py-10 z-10 bg-black md:bg-opacity-90 relative lg:right-0 md:w-[30rem] opacity-90 rounded'>
-            <h1 className='text-orange text-xl md:text-2xl'>Wordle Clone</h1>
-            <p className='text-white my-4'>Recreated the web based word game <Link className='text-orange' href='https://www.nytimes.com/games/wordle/index.html'>Worlde</Link>. Integrated similar design and animations to exhibit design-to-code skills.</p>
-            <ul className='text-blue-light flex gap-x-2 text-sm'>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-            <ul className='my-4 flex gap-3'>
-              <li>
-                <Link href='https://github.com/isaiahaquino/wordle-clone' className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
-                  <TbBrandGithub size={25} />
-                </Link>
-              </li>
-              <li>
-                <Link href='https://isaiahaquino.github.io/wordle-clone/' className='text-blue-light hover:text-orange transition-all duration-200 ease-in-out'>
-                  <TbExternalLink size={25} />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Project 
+          orientation='left'
+          title='Alpha Psi Rho'
+          img='/alphapsirho.jpeg'
+          desc='Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.'
+          stack={['React', 'Gatsby', 'Contentful']}
+          externalLink='https://alphapsirhosdsu.gatsbyjs.io/'
+          githubLink='https://github.com/isaiahaquino/sdsu-apsirho'
+        />
+        <Project 
+          orientation='right'
+          title='E-Commerce Website'
+          img='/fakesurf.jpeg'
+          desc='A Full Stack mock e-commerce website. Enables users to browse various item categories, create custom search queries, and the ability to add/remove items to their shopping cart.'
+          stack={['React', 'Next.JS', 'TypeScript', 'TailwindCSS', 'PlanetScale', 'Prisma']}
+          externalLink='https://fakesurf.vercel.app/'
+          githubLink='https://github.com/isaiahaquino/fakesurfv2'
+        />
+        <Project 
+          orientation='left'
+          title='Worlde'
+          img='/wordle.jpeg'
+          desc={`Recreated the web based word game Worlde. Integrated similar design and animations to exhibit design-to-code skills.`}
+          stack={['JavaScript', 'HTML', 'CSS']}
+          externalLink='https://isaiahaquino.github.io/wordle-clone/'
+          githubLink='https://github.com/isaiahaquino/wordle-clone'
+        />
       </section>
 
       {/* CONTACT SECTION */}
