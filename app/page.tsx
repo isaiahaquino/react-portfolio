@@ -1,11 +1,11 @@
 "use client"
 
-import { TbArrowBigRightLines, TbChevronsRight, TbBrandGithub, TbBrandLinkedin, TbExternalLink, TbMail } from 'react-icons/tb'
+import { TbArrowBigRightLines, TbChevronsRight, TbBrandGithub, TbBrandLinkedin, TbMail } from 'react-icons/tb'
 import { FiFileText } from 'react-icons/fi'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import Project from './components/project'
+import SectionHeader from './components/sectionHeader'
 
 export default function Home() {
 
@@ -63,16 +63,14 @@ export default function Home() {
       {/* ABOUT ME SECTION */}
 
       <section className='mt-[20rem] px-[2.5rem] max-w-[1024px] lg:mx-auto'>
-        <div className='flex items-center my-10 max-w-3xl'>
-          <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
-          <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl font-gloock'>About Me</h1>
-          <div className='h-[1px] w-full bg-blue'></div>
-        </div>
+        
+        <SectionHeader title='About Me'/>
+       
         <div className='max-w-[850px]'>
           <p className='text-blue-light text-lg my-4'>Hi! My name is Isaiah and I enjoy creating things that live on the internet. My interest in web development started back in 2008 when I decided to try editing custom Myspace themes. I didn&apos;t know at the time that I was learning to manipulate HTML and CSS. All I knew was that I loved doing it!</p>
           <p className='text-blue-light text-lg my-4'>Since then, the web continued to be a major part of my life. I went on to persue a Bachlor&apos;s Degree in Computer Science at <strong className='text-orange'>San Diego State University</strong>.</p>
           <p className='text-blue-light text-lg my-4'>If I&apos;m not at the beach enjoying the California surf or trying out new resturaunts and cafes with friends, I&apos;m usually on my computer working on various projects or learning about new frontend frameworks.</p>
-          <p className=' text-blue-light text-lg my-4s'>Here are a few technologies I&apos;ve been working with recently:</p>
+          <p className='text-blue-light text-lg my-4'>Here are a few technologies I&apos;ve been working with recently:</p>
         </div>
         <ul className='text-white grid grid-cols-2 mx-4 my-4 max-w-[20rem]'>
           <li className='flex items-center gap-2'>
@@ -105,11 +103,8 @@ export default function Home() {
       {/* FEATURED PROJECTS SECTION */}
 
       <section className='mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
-        <div className='flex items-center my-10 max-w-3xl'>
-          <TbArrowBigRightLines className='shrink-0 grow-0' color='#ee6c4d' size={20}/>
-          <h1 className='text-white flex-shrink-0 mx-2 font-bold text-2xl font-gloock'>Things I&apos;ve Built</h1>
-          <div className='h-[1px] w-full bg-blue'></div>
-        </div>
+
+        <SectionHeader title='Things I&apos;ve Built' />
 
         <Project 
           orientation='left'
