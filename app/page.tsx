@@ -145,7 +145,7 @@ export default function Home() {
           orientation='left'
           title='Bladed By Yuzon'
           img=''
-          desc='A modern, responsive, full stack business website with an intergrated proprietary scheduling system. The app is built off the latest version of Next.js, and utilizes NextAuth to enable the admin to access the admin dashboard. The backbone of the website is built utilizing TypeScript.'
+          desc='A modern, responsive, full stack business website with an integrated proprietary scheduling system. The app is built off the latest version of Next.js, and utilizes NextAuth to enable the admin to access the admin dashboard. The backbone of the website is built utilizing TypeScript.'
           stack={['React', 'Next.JS', 'TypeScript', 'TailwindCSS', 'NextAuth', 'Prisma']}
           externalLink='https://bladedbyyuzon.vercel.app/'
           githubLink='https://github.com/isaiahaquino/bladedbyyuzon'
