@@ -33,3 +33,19 @@ a {
   text-decoration: none;
 }
 
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: 400ms transform ease-in, 500ms opacity ease-in 100ms;
+}
+
+.reveal.left {
+  transform: translateX(-50px);
+}
+
+.reveal.active {
+  transform: translateX(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+

@@ -13,6 +13,9 @@ export default function Home() {
   const [scrollTop, setScrollTop] = useState(0)
   const [oldTop, setOldTop] = useState(0)
 
+  const revealClass = "reveal relative translate-y-[150px] opacity-0 transition-all duration-200 ease-in"
+  const activeClass = "active translate-y-0 opacity-1"
+
   useEffect(() => {
     const handleScroll = (event: Event) => {
       setScrollTop(window.scrollY);
@@ -36,12 +39,44 @@ export default function Home() {
     setOldTop(scrollTop)
   }, [scrollTop])
 
+  useEffect(() => {
+    const reveal = () => {
+      var reveals = document.querySelectorAll(".reveal")
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight
+        var elementTop = reveals[i].getBoundingClientRect().top
+        var elementVisible = 200
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active")
+          Array.from(reveals[i].children).forEach(child => {
+            // setTimeout(() => {
+            //   child.classList.add("reveal")
+            //   child.classList.add("active")
+            // }, 500)
+          })
+        } 
+        // else {
+        //   reveals[i].classList.remove("active")
+        // }
+      }
+    }
+
+    window.addEventListener("scroll", reveal)
+    reveal()
+
+    return () => {
+      window.removeEventListener("scroll", reveal)
+    }
+  }, [])
+
+  
+
   return (
     <main className='min-h-screen'>
 
       {/* FRONT PAGE */}
 
-      <section>
+      <section className=''>
         <nav className={`fixed top-[-1rem] w-screen bg-black z-50 flex justify-between items-center py-4 px-6 ${nav} ${scrollTop == 0 ? 'shadow-none' : 'shadow-lg'} transition-all duration-300 ease-in-out`}>
           <h1 className='text-2xl font-semibold text-orange font-gloock'>MadeByIsaiah</h1>
           <ul className='flex items-center gap-4'>
@@ -52,17 +87,17 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className='mt-[10rem] pl-[2.5rem] pr-[3rem] max-w-[1024px] lg:mx-auto'>
+        <div className='reveal mt-[10rem] pl-[2.5rem] pr-[3rem] max-w-[1024px] lg:mx-auto'>
           <h2 className='my-2 text-lg text-orange'>Hey there, my name is</h2>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-white font-gloock'>Isaiah Aquino.</h1>
           <h1 className='text-4xl my-1 sm:text-5xl md:text-6xl text-blue-light font-gloock'>I build things for the web.</h1>
-          <p className='my-5 text-lg text-blue-light max-w-lg'>I&apos;m an aspiring Front-end Javascript developer with a hunger for expanding my knowledge and experience in creating clean and user friendly web experiences.</p>
+          <p className='my-5 text-lg text-blue-light max-w-lg'>I&apos;m an aspiring Full-Stack Web Developer with a hunger for expanding my knowledge and experience in creating clean and user friendly web experiences.</p>
         </div>
       </section>
 
       {/* ABOUT ME SECTION */}
 
-      <section className='mt-[20rem] px-[2.5rem] max-w-[1024px] lg:mx-auto'>
+      <section className='reveal left mt-[20rem] px-[2.5rem] max-w-[1024px] lg:mx-auto'>
         
         <SectionHeader title='About Me'/>
        
@@ -102,7 +137,7 @@ export default function Home() {
 
       {/* FEATURED PROJECTS SECTION */}
 
-      <section className='mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
+      <section className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
 
         <SectionHeader title='Things I&apos;ve Built' />
 
@@ -137,7 +172,7 @@ export default function Home() {
 
       {/* PROJECTS IN PROGRESS */}
 
-      <section  className='mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
+      <section  className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
 
         <SectionHeader title='Projects in Progress' />
 
@@ -155,7 +190,7 @@ export default function Home() {
 
       {/* CONTACT SECTION */}
 
-      <section className='mt-[10rem] px-[2.5rem] flex flex-col items-center'>
+      <section className='reveal mt-[10rem] px-[2.5rem] flex flex-col items-center'>
         <div className='flex items-center text-orange gap-2'>
           <TbArrowBigRightLines color='#ee6c4d' size={15}/>
           <p>Like what you see?</p>
