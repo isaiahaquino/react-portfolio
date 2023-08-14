@@ -143,6 +143,15 @@ export default function Home() {
 
         <Project 
           orientation='left'
+          title='Bladed By Yuzon'
+          img='/bladedbyyuzon.png'
+          desc='A modern, responsive, full stack business website with an integrated proprietary scheduling system. The app is built off the latest version of Next.js, and utilizes NextAuth to enable the admin to access the admin dashboard. The backbone of the website is built utilizing TypeScript.'
+          stack={['React', 'Next.JS', 'TypeScript', 'TailwindCSS', 'NextAuth', 'Prisma']}
+          externalLink='https://bladedbyyuzon.vercel.app/'
+          githubLink='https://github.com/isaiahaquino/bladedbyyuzon'
+        />
+        <Project 
+          orientation='right'
           title='Alpha Psi Rho'
           img='/alphapsirho.jpeg'
           desc='Designed and developed a modern website using Gatsby and Contentful. Standardized all output with a new, responsive, mobile-first approach.'
@@ -151,7 +160,7 @@ export default function Home() {
           githubLink='https://github.com/isaiahaquino/sdsu-apsirho'
         />
         <Project 
-          orientation='right'
+          orientation='left'
           title='E-Commerce Website'
           img='/fakesurf.jpeg'
           desc='A Full Stack mock e-commerce website. Enables users to browse various item categories, create custom search queries, and the ability to add/remove items to their shopping cart.'
@@ -160,7 +169,7 @@ export default function Home() {
           githubLink='https://github.com/isaiahaquino/fakesurfv2'
         />
         <Project 
-          orientation='left'
+          orientation='right'
           title='Worlde'
           img='/wordle.jpeg'
           desc={`Recreated the web based word game Worlde. Integrated similar design and animations to exhibit design-to-code skills.`}
@@ -175,16 +184,6 @@ export default function Home() {
       <section  className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
 
         <SectionHeader title='Projects in Progress' />
-
-        <Project 
-          orientation='left'
-          title='Bladed By Yuzon'
-          img=''
-          desc='A modern, responsive, full stack business website with an integrated proprietary scheduling system. The app is built off the latest version of Next.js, and utilizes NextAuth to enable the admin to access the admin dashboard. The backbone of the website is built utilizing TypeScript.'
-          stack={['React', 'Next.JS', 'TypeScript', 'TailwindCSS', 'NextAuth', 'Prisma']}
-          externalLink='https://bladedbyyuzon.vercel.app/'
-          githubLink='https://github.com/isaiahaquino/bladedbyyuzon'
-        />
 
       </section>
 
