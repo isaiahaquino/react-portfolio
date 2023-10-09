@@ -110,7 +110,7 @@ export default function Home() {
         <ul className='text-white grid grid-cols-2 mx-4 my-4 max-w-[20rem]'>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            JavaScript
+            MongoDB
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
@@ -126,11 +126,11 @@ export default function Home() {
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            Gatsby
+            Express
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            TailwindCSS
+            NodeJS
           </li>
         </ul>
       </section>
@@ -184,6 +184,16 @@ export default function Home() {
       <section  className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
 
         <SectionHeader title='Projects in Progress' />
+
+        <Project 
+          orientation='left'
+          title='Memories'
+          img='/memories.png'
+          desc='A Full Stack MERN Social Media App with integrated Authorization, Authentification, Pagination, and Search functionalities.'
+          stack={['MongoDB', 'Express', 'React', 'NodeJS']}
+          externalLink='https://github.com/isaiahaquino/memories-project'
+          githubLink='https://github.com/isaiahaquino/memories-project'
+        />
 
       </section>
 
