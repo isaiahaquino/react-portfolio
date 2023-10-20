@@ -142,6 +142,15 @@ export default function Home() {
         <SectionHeader title='Things I&apos;ve Built' />
 
         <Project 
+          orientation='right'
+          title='Memories'
+          img='/memories_project.png'
+          desc='A Full Stack MERN Social Media App with integrated Authorization, Authentification, Pagination, and Search functionalities.'
+          stack={['MongoDB', 'Express', 'React', 'NodeJS']}
+          externalLink='https://memories-project-wine.vercel.app/posts'
+          githubLink='https://github.com/isaiahaquino/memories-project'
+        />
+        <Project 
           orientation='left'
           title='Bladed By Yuzon'
           img='/bladedbyyuzon.png'
@@ -185,15 +194,7 @@ export default function Home() {
 
         <SectionHeader title='Projects in Progress' />
 
-        <Project 
-          orientation='left'
-          title='Memories'
-          img='/memories.png'
-          desc='A Full Stack MERN Social Media App with integrated Authorization, Authentification, Pagination, and Search functionalities.'
-          stack={['MongoDB', 'Express', 'React', 'NodeJS']}
-          externalLink='https://github.com/isaiahaquino/memories-project'
-          githubLink='https://github.com/isaiahaquino/memories-project'
-        />
+        
 
       </section>
 
