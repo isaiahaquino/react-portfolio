@@ -142,6 +142,16 @@ export default function Home() {
         <SectionHeader title='Things I&apos;ve Built' />
 
         <Project 
+          orientation='left'
+          title='Bug Splat'
+          img='/bug_splat.png'
+          desc={`Bug Splat is a full stack web-based bug tracking application powered by Next.JS, designed to streamline the process of identifying, reporting, and resolving software issues. This platform is dedicated to enhancing project management and collaboration, making it an essential tool for software development teams.`}
+          stack={['React', 'Next.JS', 'TailwindCSS', 'MongoDB']}
+          externalLink='https://bug-tracker-beta.vercel.app/'
+          githubLink='https://github.com/isaiahaquino/bug-tracker'
+        />
+        
+        <Project 
           orientation='right'
           title='Memories'
           img='/memories_project.png'
@@ -194,15 +204,6 @@ export default function Home() {
 
         <SectionHeader title='Projects in Progress' />
 
-        <Project 
-          orientation='left'
-          title='Bug Splat'
-          img='/bug_splat.png'
-          desc={`Bug Splat is a web-based bug tracking application powered by Next.JS, designed to streamline the process of identifying, reporting, and resolving software issues. This platform is dedicated to enhancing project management and collaboration, making it an essential tool for software development teams.`}
-          stack={['React', 'Next.JS', 'TailwindCSS', 'MongoDB']}
-          externalLink='https://bug-tracker-beta.vercel.app/'
-          githubLink='https://github.com/isaiahaquino/bug-tracker'
-        />
         
 
       </section>
