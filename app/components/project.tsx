@@ -18,7 +18,7 @@ export default function Project(props: FeaturedProject) {
       <Link href={`${props.externalLink}`}  className={`h-full w-full md:w-[30rem] md:h-[20rem] absolute md:right-0 md:bottom-0 lg:h-[24rem] lg:w-[40rem] ${props.orientation == 'right' ? 'lg:left-0' : ''} hover:z-20 hover:scale-105 transition-all duration-300 ease-in-out`}>
         <Image src={`${props.img}`} alt='' fill className='object-cover rounded'/>
       </Link>
-      <div className={`px-10 py-10 z-10 bg-black md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded ${props.orientation == 'right' ? 'md:absolute lg:right-0 lg:text-right' : ''}`}>
+      <div className={`px-10 py-10 z-10 bg-blue md:bg-opacity-90 relative md:w-[30rem] opacity-90 rounded ${props.orientation == 'right' ? 'md:absolute lg:right-0 lg:text-right' : ''}`}>
         <h1 className='text-orange text-xl md:text-2xl'>{props.title}</h1>
         <p className='text-white my-4'>{props.desc}</p>
         <ul className={`text-blue-light flex flex-wrap text-sm gap-x-2 ${props.orientation == 'right' ? 'lg:justify-end' : ''}`}>

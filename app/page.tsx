@@ -81,7 +81,7 @@ export default function Home() {
           <h1 className='text-2xl font-semibold text-orange font-gloock'>MadeByIsaiah</h1>
           <ul className='flex items-center gap-4'>
             <li>
-              <a href='https://docs.google.com/document/d/1oS3eGb4siIOyTOP9uHplK8lYOmD9bvKImNpqUeJ3Zf4/edit?usp=sharing' className='font-gloock tracking-wider border-2 border-orange px-2 py-2 rounded-md text-orange hover:bg-orange hover:bg-opacity-5 transition-all duration-200 ease-in-out'>
+              <a href='https://docs.google.com/document/d/1oS3eGb4siIOyTOP9uHplK8lYOmD9bvKImNpqUeJ3Zf4/edit?usp=sharing' className='font-gloock tracking-wider border-2 border-orange px-2 py-2 rounded-md text-orange hover:bg-orange hover:bg-opacity-10 transition-all duration-200 ease-in-out'>
                 RESUME
               </a>
             </li>
@@ -169,7 +169,7 @@ export default function Home() {
           externalLink='https://bladedbyyuzon.vercel.app/'
           githubLink='https://github.com/isaiahaquino/bladedbyyuzon'
         />
-        <Project 
+        {/* <Project 
           orientation='right'
           title='Alpha Psi Rho'
           img='/alphapsirho.jpeg'
@@ -177,9 +177,9 @@ export default function Home() {
           stack={['React', 'Gatsby', 'Contentful']}
           externalLink='https://alphapsirhosdsu.gatsbyjs.io/'
           githubLink='https://github.com/isaiahaquino/sdsu-apsirho'
-        />
+        /> */}
         <Project 
-          orientation='left'
+          orientation='right'
           title='E-Commerce Website'
           img='/fakesurf.jpeg'
           desc='A Full Stack mock e-commerce website. Enables users to browse various item categories, create custom search queries, and the ability to add/remove items to their shopping cart.'
@@ -188,7 +188,7 @@ export default function Home() {
           githubLink='https://github.com/isaiahaquino/fakesurfv2'
         />
         <Project 
-          orientation='right'
+          orientation='left'
           title='Worlde'
           img='/wordle.jpeg'
           desc={`Recreated the web based word game Worlde. Integrated similar design and animations to exhibit design-to-code skills.`}
@@ -217,7 +217,7 @@ export default function Home() {
         </div>
         <h1 className='text-4xl text-white my-4 font-gloock'>Contact Me</h1>
         <p className='text-center text-blue-light max-w-xl'>I&apos;m currently looking for new opportunities as a Front-end Developer, Software Engineer, or Full-stack Developer. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
-        <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-5 transition-all duration-200 ease-in-out' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
+        <a className='mt-10 px-6 py-4 border-2 border-orange text-orange rounded-md hover:bg-orange hover:bg-opacity-10 transition-all duration-200 ease-in-out' href='mailto: isaiahaquino1997@gmail.com'>Say Hello</a>
       </section>
 
       {/* FOOTER SECTION */}
