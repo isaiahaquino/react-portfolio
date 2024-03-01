@@ -204,6 +204,15 @@ export default function Home() {
 
         <SectionHeader title='Projects in Progress' />
 
+        <Project 
+          orientation='left'
+          title='Chatly'
+          img=''
+          desc={`Chatly is a dynamic and user-friendly web chat application built using Next.js, designed for seamless communication and collaboration. This platform empowers users to create accounts, form messaging groups, and engage in real-time conversations, resembling the functionality of popular tools like Slack.`}
+          stack={['React', 'Next.JS', 'TailwindCSS', 'MongoDB']}
+          externalLink='https://github.com/isaiahaquino/chatly'
+          githubLink='https://github.com/isaiahaquino/chatly'
+        />
         
 
       </section>
