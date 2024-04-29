@@ -135,6 +135,33 @@ export default function Home() {
         </ul>
       </section>
 
+      {/* WORK EXPERIENCE SECTION */}
+
+      <section className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
+        
+        <SectionHeader title='Where I&apos;ve Worked' />
+
+        <div className='max-w-[850px] mt-[3rem] ml-2 md:ml-[4rem]'>
+          <h1 className='text-xl text-white'>Software Developer Intern <a className='text-orange' href='https://winwinlabs.org/'>@ WinWinLabs</a></h1>
+          <p className='text-blue-light'>March 2024 - Present</p>
+          <ul className='grid-cols-2 mx-4 my-4 text-blue-light'>
+            <li className='flex gap-2'>
+              <TbChevronsRight color='#ee6c4d' />
+              <p className='max-w-lg'>
+                Designed and developed new, modern web page layouts to enhance user experience on a project that is built with PHP, utilizing the CodeIgniter Framework.
+              </p>
+            </li>
+            <li className='flex gap-2'>
+              <TbChevronsRight color='#ee6c4d' />
+              <p className='max-w-lg'>
+                Collaborate with team members to implement responsive and user-friendly designs utilizing Bootstrap.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
       {/* FEATURED PROJECTS SECTION */}
 
       <section className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
