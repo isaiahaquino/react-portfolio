@@ -142,7 +142,26 @@ export default function Home() {
         <SectionHeader title='Where I&apos;ve Worked' />
 
         <div className='max-w-[850px] mt-[3rem] ml-2 md:ml-[4rem]'>
-          <h1 className='text-xl text-white'>Software Developer Intern <a className='text-orange' href='https://winwinlabs.org/'>@ WinWinLabs</a></h1>
+          <h1 className='text-xl text-white'>Lead Web Developer Volunteer <a className='text-orange' href='https://seniorcarehomeent.com/'>@ Senior Care Home Entertainment</a></h1>
+          <p className='text-blue-light'>July 2024 - Present</p>
+          <ul className='grid-cols-2 mx-4 my-4 text-blue-light'>
+            <li className='flex gap-2'>
+              <TbChevronsRight color='#ee6c4d' />
+              <p className='max-w-lg'>
+                Oversee the development and implementation of the web application. Lead and mentored a team of developers, providing technical guidance and support.
+              </p>
+            </li>
+            <li className='flex gap-2'>
+              <TbChevronsRight color='#ee6c4d' />
+              <p className='max-w-lg'>
+                Developed the web application using Wordpress, maintaining high performance and best practices.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div className='max-w-[850px] mt-[3rem] ml-2 md:ml-[4rem]'>
+          <h1 className='text-xl text-white'>Software Developer Volunteer <a className='text-orange' href='https://winwinlabs.org/'>@ WinWinLabs</a></h1>
           <p className='text-blue-light'>March 2024 - Present</p>
           <ul className='grid-cols-2 mx-4 my-4 text-blue-light'>
             <li className='flex gap-2'>
@@ -205,7 +224,7 @@ export default function Home() {
           externalLink='https://alphapsirhosdsu.gatsbyjs.io/'
           githubLink='https://github.com/isaiahaquino/sdsu-apsirho'
         /> */}
-        <Project 
+        {/* <Project 
           orientation='right'
           title='E-Commerce Website'
           img='/fakesurf.jpeg'
@@ -213,9 +232,9 @@ export default function Home() {
           stack={['React', 'Next.JS', 'TypeScript', 'TailwindCSS', 'PlanetScale', 'Prisma']}
           externalLink='https://fakesurf.vercel.app/'
           githubLink='https://github.com/isaiahaquino/fakesurfv2'
-        />
+        /> */}
         <Project 
-          orientation='left'
+          orientation='right'
           title='Worlde'
           img='/wordle.jpeg'
           desc={`Recreated the web based word game Worlde. Integrated similar design and animations to exhibit design-to-code skills.`}
