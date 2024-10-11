@@ -110,11 +110,11 @@ export default function Home() {
         <ul className='text-white grid grid-cols-2 mx-4 my-4 max-w-[20rem]'>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            MongoDB
+            Wordpress
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
-            TypeScript
+            PHP
           </li>
           <li className='flex items-center gap-2'>
             <TbChevronsRight color='#ee6c4d' />
@@ -140,6 +140,25 @@ export default function Home() {
       <section className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
         
         <SectionHeader title='Where I&apos;ve Worked' />
+
+        <div className='max-w-[850px] mt-[3rem] ml-2 md:ml-[4rem]'>
+          <h1 className='text-xl text-white'>Founding Web Developer <a className='text-orange' href='https://hightide.vercel.app/'>@ HighTide AI</a></h1>
+          <p className='text-blue-light'>August 2024 - Present</p>
+          <ul className='grid-cols-2 mx-4 my-4 text-blue-light'>
+            <li className='flex gap-2'>
+              <TbChevronsRight color='#ee6c4d' />
+              <p className='max-w-lg'>
+                Led the design and development of the company&apos;s website, enhancing user experience and engagement.
+              </p>
+            </li>
+            <li className='flex gap-2'>
+              <TbChevronsRight color='#ee6c4d' />
+              <p className='max-w-lg'>
+                Collaborated with cross-functional teams to gather requirements and deliver innovative solutions aligned with business goals.
+              </p>
+            </li>
+          </ul>
+        </div>
 
         <div className='max-w-[850px] mt-[3rem] ml-2 md:ml-[4rem]'>
           <h1 className='text-xl text-white'>Lead Web Developer Volunteer <a className='text-orange' href='https://seniorcarehomeent.com/'>@ Senior Care Home Entertainment</a></h1>
@@ -246,7 +265,7 @@ export default function Home() {
 
       {/* PROJECTS IN PROGRESS */}
 
-      <section  className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
+      {/* <section  className='reveal left mt-[10rem] px-[2.5rem] flex flex-col max-w-[1024px] lg:mx-auto'>
 
         <SectionHeader title='Projects in Progress' />
 
@@ -261,7 +280,7 @@ export default function Home() {
         />
         
 
-      </section>
+      </section> */}
 
       {/* CONTACT SECTION */}
 
